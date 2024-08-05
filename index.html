@@ -1,0 +1,463 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+
+  <title>GCaravaca</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pixelify+Sans&family=Raleway&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
+
+  <!-- Bootstrap5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+  <!--  hoja de estilo AOS JS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- SIDEBAR -->
+  <div class="d-flex flex-column flex-shrink-0 bg-light" id="sidebar">
+    <!--<a href="" class="d-block p-2 link-dark text-decoration-none" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Icon-only">
+          <img class="sidebarImage" src="Imagenes/Favicon.png" alt="Icon">
+          <span class="visually-hidden">Icon-only</span>
+      </a>-->
+
+    <div href="" class="d-block p-2 link-dark text-decoration-none text-center" title="" data-bs-toggle="tooltip"
+      data-bs-placement="right" data-bs-original-title="Icon-only">
+      <img class="sidebarImage" src="Imagenes/Favicon.png" alt="Icon" />
+      <span class="visually-hidden">Icon-only</span>
+    </div>
+
+    <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
+      <li class="nav-item">
+        <a href="#banner" class="nav-link active sidebarButtonSize" aria-current="page" title=""
+          data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Home">
+          <img class="sidebarImage" src="Imagenes/SideBarIcons/home.png" alt="Icon" />
+        </a>
+      </li>
+      <li>
+        <a href="#sobre-mi" class="nav-link sidebarButtonSize" title="" data-bs-toggle="tooltip"
+          data-bs-placement="right" data-bs-original-title="About_me">
+          <img class="sidebarImage" src="Imagenes/SideBarIcons/info.png" alt="Icon" />
+        </a>
+      </li>
+      <li>
+        <a href="#Experience" class="nav-link sidebarButtonSize" title="" data-bs-toggle="tooltip"
+          data-bs-placement="right" data-bs-original-title="Portfolio">
+          <img class="sidebarImage" src="Imagenes/SideBarIcons/portfolio.png" alt="Icon" />
+        </a>
+      </li>
+      <li>
+        <a href="#Resume" class="nav-link sidebarButtonSize" title="" data-bs-toggle="tooltip" data-bs-placement="right"
+          data-bs-original-title="CV">
+          <img class="sidebarImage" src="Imagenes/SideBarIcons/cv.png" alt="Icon" />
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nav-link sidebarButtonSize" title="" data-bs-toggle="tooltip" data-bs-placement="right"
+          data-bs-original-title="Contacts">
+          <img class="sidebarImage" src="Imagenes/SideBarIcons/contact.png" alt="Icon" />
+        </a>
+      </li>
+
+      <!-- Rounded switch -->
+      <div class="switch-container justify-content-center text-center">
+        <span class="switch-label">ES</span>
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider round"></span>
+        </label>
+        <span class="switch-label">EN</span>
+      </div>      
+
+    </ul>
+  </div>
+
+  
+
+  
+
+  <!-- BANNER -->
+  <div class="fluid-container" id="banner">
+    <div class="image-container">
+      <img class="background-image" src="Imagenes/banner.jpg" />
+      <img class="foreground-image" src="Imagenes/WhiteRavenLogo_NoBG.png" />
+    </div>
+  </div>
+
+  <!-- PERFIL PROFESIONAL -->
+  <div>
+    <h1></h1>
+    <p class="fs-3" id="perfil-profesional">
+      Ingeniero de software full-stack, especializado en Bootstrap,
+      JavaScript, C#, C++, y SQL, con habilidades en diseño de interfaces,
+      desarrollo backend y gestión de bases de datos.
+    </p>
+  </div>
+
+  <!-- SOBRE MI -->
+  <div id="sobre-mi">
+    <h1 class="text-center">Sobre Mi</h1>
+
+    <div class="fluid-container pt-3">
+      <div class="row justify-content-center">
+        <div class="col-md-4 me-4 d-flex justify-content-center">
+          <div class="card animContainer">
+            <div class="card-img-top">
+              <lottie-player id="MissionAnim"
+                src="https://lottie.host/9433b8a8-ad13-4151-a728-516aaf3bd11d/ceJgI40Kz5.json" autoplay
+                loop></lottie-player>
+            </div>
+            <div class="card-body">
+              <h2 class="card-title text-center">Misión</h2>
+              <p class="card-text px-3 pb-3">
+                Aplicar mis conocimientos de programación para desarrollar
+                soluciones innovadoras y eficientes, contribuyendo al éxito de
+                la empresa. Además de facilitar la interacción entre las
+                personas y la tecnología.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 ms-4 d-flex justify-content-center">
+          <div class="card animContainer">
+            <div class="card-img-top">
+              <lottie-player id="VisionAnim"
+                src="https://lottie.host/d8fbc471-c0f8-4d6a-9d98-bfa573924b90/QAlq2QUxoq.json" autoplay></lottie-player>
+            </div>
+            <div class="card-body">
+              <h2 class="card-title text-center">Visión</h2>
+              <p class="card-text px-3 pb-3">
+                Ser un experto en desarrollo de software, creando aplicaciones
+                inteligentes, elegantes y seguras que impulsen el progreso
+                tecnológico y beneficien a la empresa.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Valores -->
+    <div id="valores">
+      <h2 class="text-center">Valores</h2>
+      <div>
+        <h4 style="color: #4bd1fb">Colaboración</h4>
+        <p class="pb-3">
+          He aprendido a trabajar en equipo de manera efectiva, comunicándome
+          claramente y contribuyendo al éxito colectivo del proyecto.
+        </p>
+      </div>
+      <div>
+        <h4 style="color: #4bd1fb">Calidad</h4>
+        <p class="pb-3">
+          Me comprometo con la excelencia en el trabajo, asegurando que el
+          software desarrollado sea confiable, eficiente, seguro y con alto
+          rendimiento.
+        </p>
+      </div>
+
+      <div>
+        <h4 style="color: #4bd1fb">Respeto</h4>
+        <p class="pb-3">
+          Trato a los demás con dignidad, demostrando empatía, solidaridad y
+          tolerancia, fomentando un ambiente agradable y armonioso en el
+          equipo.
+        </p>
+      </div>
+
+      <div>
+        <h4 style="color: #4bd1fb">Aprendizaje Continuo</h4>
+        <p class="pb-3">
+          Me esfuerzo por aprender y adaptarme constantemente a nuevas
+          tecnologías, metodologías y tendencias en el desarrollo de software.
+        </p>
+      </div>
+
+      <div>
+        <h4 style="color: #4bd1fb">Resolución de problemas</h4>
+        <p class="pb-3">
+          Abordo los desafíos con creatividad y lógica, buscando soluciones
+          efectivas y eficientes para los problemas que enfrento.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Experience -->
+  <div id="Experience" class="pb-5">
+    <h1 class="text-center">Experiencia</h1>
+
+    <p>
+      Mi experiencia profesional se basa en gran medida en mi formación académica. Aunque aún no he tenido la
+      oportunidad de trabajar en un entorno profesional, los proyectos y trabajos que he realizado durante mi etapa
+      universitaria reflejan mi dedicación, habilidades y conocimientos adquiridos en diferentes áreas de estudio. A
+      continuación, presento algunos de estos trabajos, que demuestran mi capacidad para aplicar conceptos teóricos a
+      situaciones prácticas y mi compromiso con el aprendizaje continuo.
+    </p>
+
+    <div class="fluid-container pt-3">
+      <div class="row justify-content-center">
+        <div class="col-md-3 me-2 d-flex">
+          <div class="card exp-card">
+            <img src="Imagenes/Proyecto1/viajeros_solos_logo.png" class="card-img-top" alt="..." />
+            <div class="card-body black-letter">
+              <h5 class="card-title text-center">Viajeros Solos</h5>
+              <p class="card-text">
+                La creación de una página web enfocada en el sector del
+                turismo para reservar habitaciones, transporte, comida, entre
+                otros.
+              </p>
+              <button type="button" class="btn no-border secondary-color-bg white-letter"
+                data-bs-toggle="modal" data-bs-target="#ViajerosSolosModal">
+                Ver más
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!--<div class="col-md-3 me-2 d-flex">
+          <div class="card exp-card">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body black-letter">
+              <h5 class="card-title text-center">Base de datos para QTV</h5>
+              <p class="card-text">El objetivo era diseñar y construir un modelo de base de datos para gestionar el contenido digital como películas, series y documentales.</p>
+              <button type="button" class="btn btn-primary no-border" style="background-color: #4BD1FB;" data-bs-toggle="modal" data-bs-target="#ViajerosSolosModal">
+                Ver más 
+              </button>
+            </div>
+          </div>
+        </div>-->
+
+        <div class="col-md-3 me-2 d-flex">
+          <div class="card exp-card">
+            <img src="Imagenes/Proyecto2/tu_salud_primero_logo.png" class="card-img-top" alt="..." />
+            <div class="card-body black-letter">
+              <h5 class="card-title text-center">Su Salud Primero</h5>
+              <p class="card-text">
+                Creación de una página web enfocada en el sector de medicina
+                para la administración de un hospital.
+              </p>
+              <button type="button" class="btn no-border secondary-color-bg white-letter"
+                data-bs-toggle="modal" data-bs-target="#ViajerosSolosModal">
+                Ver más
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="ViajerosSolosModal" tabindex="-1" aria-labelledby="ViajerosSolosModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title black-letter" id="ViajerosSolosModalLabel">
+              Modal title
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+
+          <div class="modal-body">
+            <div class="black-letter">
+              <h3>Viajeros Solos</h3>
+              <p>
+                La creación de una página web enfocada en el sector turístico
+                fue llevada a cabo con un enfoque predominantemente en
+                frontend, con una mínima utilización de backend. La base de
+                datos fue gestionada mediante MongoDB para la administración
+                de usuarios. La gestión de versiones se realizó a través de
+                GitHub y la administración del equipo se coordinó mediante
+                Asana.
+              </p>
+              <p>
+                Se formó un equipo denominado Darkcode, con su página
+                correspondiente, y fui designado como coordinador del mismo.
+                La página web ofrecía diversas funcionalidades, incluyendo
+                roles (usuario, administrador, dueño de servicio), sistema de
+                inicio de sesión, reserva de servicios (hoteles, transporte,
+                comida, entretenimiento), reseñas y pagos.
+              </p>
+            </div>
+
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                  aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                  aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                  aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                  aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+                  aria-label="Slide 6"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="Imagenes/Proyecto1/viajeros_solos_landing.png" class="d-block long_img" alt="..." />
+                </div>
+                <div class="carousel-item">
+                  <img src="Imagenes/Proyecto1/viajeros_solos_login.png" class="d-block regular_img" alt="..." />
+                </div>
+                <div class="carousel-item">
+                  <img src="Imagenes/Proyecto1/viajeros_solos_booking.png" class="d-block long_img" alt="..." />
+                </div>
+                <div class="carousel-item">
+                  <img src="Imagenes/Proyecto1/viajeros_solos_payment.png" class="d-block long_img" alt="..." />
+                </div>
+                <div class="carousel-item">
+                  <img src="Imagenes/Proyecto1/viajeros_solos_calification.png" class="d-block long_img" alt="..." />
+                </div>
+                <div class="carousel-item">
+                  <img src="Imagenes/Proyecto1/viajeros_solos_reports.png" class="d-block long_img" alt="..." />
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                Cerrar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <div id="Resume" class="pb-5">
+    <h1 class="text-center">Curriculum</h1>
+    <p>Aquí puedes descargar mi Currículum Vitae en ambos idiomas, inglés y español. He preparado estos documentos para
+      ofrecer una visión detallada de mi formación académica, habilidades y logros. Elige el idioma que prefieras y
+      obtén toda la información sobre mi perfil profesional.</p>
+
+
+    <div class="fluid-container">
+
+      <div class="row justify-content-center">
+
+        <div class="col-md-5 me-2 pt-5">
+
+          <div>
+            <h5>Curriculum Español</h5>
+            <div class="row">
+
+              <div class="card CV_ES secondary-color-bg col-md-5 me-2 d-flex">
+                <div class="card-body text-center">
+                  <a href="Curriculums/CV-Español_V2.pdf" target="_blank" class="btn white-letter">Vista Previa</a>
+                </div>
+              </div>
+  
+              <div class="card CV_ES secondary-color-bg col-md-5 me-2 d-flex">
+                <div class="card-body text-center">
+                  <a href="Curriculums/CV-Español_V2.pdf" download="CV-Español_V2.pdf"
+                    class="btn white-letter">Descargar</a>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          
+
+          <div>
+            <h5>Curriculum Inglés</h5>
+            <div class="row">
+
+              <div class="card CV_EN secondary-color-bg col-md-5 me-2 d-flex">
+                <div class="card-body text-center">
+                  <a href="Curriculums/CV-Ingles_V2.pdf" target="_blank" class="btn white-letter">Vista Previa</a>
+                </div>
+              </div>
+  
+              <div class="card CV_EN secondary-color-bg col-md-5 me-2 d-flex">
+                <div class="card-body text-center">
+                  <a href="Curriculums/CV-Ingles_V2.pdf" download="CV-Ingles_V2.pdf"
+                    class="btn white-letter">Descargar</a>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+
+        </div>
+
+        <div class="col-md-5 me-2 d-flex">
+          <lottie-player src="https://lottie.host/abdcda61-3471-4373-a15f-0629814eef81/popQIVt0h5.json" autoplay
+            loop></lottie-player>
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+  </div>
+
+
+
+
+  <!-- CONTACTS -->
+  <div id="Contacts" class="padding-enorme">
+    <h1 class="text-center">Contactos</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque esse
+      dolorum optio ullam at officiis error similique soluta cupiditate quas
+      eveniet possimus alias quidem labore ad pariatur, quia hic fugit!Lorem!
+    </p>
+  </div>
+
+
+
+
+
+
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<!-- interactividad Lottie JS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.13/lottie.min.js"></script>
+
+<!-- libreria microinteracciones -->
+<script src="https://unpkg.com/@lottiefiles/lottie-player@0.3.0/dist/lottie-player.js"></script>
+
+<!-- libreria animacion AOS JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script src="script.js"></script>
+
+</html>
