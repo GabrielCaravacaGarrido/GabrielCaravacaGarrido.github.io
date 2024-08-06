@@ -38,4 +38,55 @@ document.querySelectorAll('.nav-link').forEach(function (link) {
 
 
 
-/* MODAL */
+/* CONTACT FORM */
+$(document).ready(function(){
+    $('#contactForm').submit(function(event){
+        event.preventDefault(); // Previene el envío del formulario por defecto
+
+        // Recoge los datos del formulario
+        var formData = {
+            name: $('#name').val(),
+            email: $('#email').val(),
+            message: $('#message').val()
+        };
+
+        // Validación básica
+        if (formData.name === "" || formData.email === "" || formData.message === "") {
+            Swal.fire({
+                icon: 'warning',
+                title: 'Oops...',
+                text: 'Por favor, complete todos los campos.'
+            });
+            return;
+        }
+
+        // Enviar los datos al servidor usando AJAX
+        $.ajax({
+            type: 'POST',
+            url: 'procesar_formulario.php', // La URL donde enviarás los datos
+            data: formData,
+            success: function(response){
+                if (response.trim() === "success") {
+                    Swal.fire({
+                        icon: 'success',
+                        title: '¡Éxito!',
+                        text: 'Mensaje enviado con éxito.'
+                    });
+                } else {
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Oops...',
+                        text: 'Hubo un error al enviar el mensaje.'
+                    });
+                }
+            },
+            error: function(){
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Hubo un error al enviar el mensaje.'
+                });
+            }
+        });
+    });
+});

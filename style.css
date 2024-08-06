@@ -278,3 +278,17 @@ input:checked + .slider:before {
   padding-left: 6vw;
   padding-right: 4vw;
 }
+
+.formContainer{
+  margin: 5vh 20vw;
+  padding: 2vh 0;
+}
+
+#contactForm{
+  padding-left: 4vw;
+  padding-right: 4vw;
+}
+
+#message{
+  height: 18vh;
+}
