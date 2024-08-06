@@ -63,24 +63,21 @@ $(document).ready(function(){
         // Enviar los datos al servidor usando AJAX
         $.ajax({
             type: 'POST',
-            url: 'procesar_formulario.php', // La URL donde enviarás los datos
-            data: formData,
+            url: 'https://formspree.io/f/mwpebeer', // La URL de Formspree
+            data: $(this).serialize(),
+            dataType: 'json',
             success: function(response){
-                if (response.trim() === "success") {
-                    Swal.fire({
-                        icon: 'success',
-                        title: '¡Éxito!',
-                        text: 'Mensaje enviado con éxito.'
-                    });
-                } else {
-                    Swal.fire({
-                        icon: 'error',
-                        title: 'Oops...',
-                        text: 'Hubo un error al enviar el mensaje.'
-                    });
-                }
+                Swal.fire({
+                    icon: 'success',
+                    title: '¡Éxito!',
+                    text: 'Mensaje enviado con éxito.'
+                });
+                
+                $('#contactForm')[0].reset();
+
             },
-            error: function(){
+            error: function(jqXHR, textStatus, errorThrown){
+                console.error("Error en AJAX:", textStatus, errorThrown);
                 Swal.fire({
                     icon: 'error',
                     title: 'Oops...',
@@ -90,3 +87,4 @@ $(document).ready(function(){
         });
     });
 });
+
