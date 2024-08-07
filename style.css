@@ -13,7 +13,7 @@ h1 {
   font-size: 80px !important;
 }
 
-/* COLORS */
+/***** COLORS *****/
 .black-letter{
   color: black !important;
 }
@@ -32,7 +32,13 @@ h1 {
 }
 
 
-/* SIDEBAR */
+/***** DISPLAY *****/
+.lang{
+  display: none;
+}
+
+
+/***** SIDEBAR *****/
 #sidebar {
     position: fixed;
     top: 0;
@@ -130,14 +136,33 @@ input:checked + .slider:before {
 
 
 
+/***** SCROLLTOP *****/
+#scrollTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  border: none;
+  background: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+#scrollTopBtn img {
+  width: 3vw;
+  height: 6vh;
+  transition: filter 0.3s;
+}
+
+#scrollTopBtn:hover img {
+  filter: brightness(0.8);
+}
 
 
 
 
-
-
-
-/* BANNER */
+/***** BANNER *****/
 .image-container {
   position: relative;
   width: 100%;
@@ -154,7 +179,9 @@ input:checked + .slider:before {
 }
 
 
-/* PERFIL PROFESIONAL */
+
+
+/***** PERFIL PROFESIONAL *****/
 #perfil-profesional{
   padding-left: 15.5vw;
   padding-right: 2vw;
@@ -164,7 +191,7 @@ input:checked + .slider:before {
 
 
 
-/* SOBRE MI */
+/***** SOBRE MI *****/
 #sobre-mi{
   padding-left: 6vw;
   padding-right: 4vw;
@@ -200,7 +227,8 @@ input:checked + .slider:before {
 
 
 
-/* EXPERIENCE */
+
+/***** EXPERIENCE *****/
 #Experience{
   padding-left: 6vw;
   padding-right: 4vw;
@@ -212,7 +240,7 @@ input:checked + .slider:before {
 
 .exp-card{
   /*border-radius: 50px !important;*/
-  width: 25vw;
+  width: 30vw;
   border: none !important;
 
 }
@@ -220,6 +248,15 @@ input:checked + .slider:before {
 .no-border{
   border: none !important;
 }
+
+#Viajeros_Solos button, #Tu_Salud_Primero button {
+  transition: background-color 0.3s ease;
+}
+
+#Viajeros_Solos button:hover, #Tu_Salud_Primero button:hover {
+  background-color: #4BD1FB !important;
+}
+
 
 .carousel-inner{
   justify-content: center;
@@ -239,9 +276,33 @@ input:checked + .slider:before {
   margin: 0 auto;
 }
 
+.custom-indicators button {
+  background-color: black !important; 
+}
+
+.custom-indicators .active {
+  background-color: #4BD1FB !important;
+}
+
+.custom-indicators button:hover {
+  background-color: #4b91fb !important;
+}
 
 
-/* RESUME */
+.custom-carousel-control .carousel-control-prev-icon,
+.custom-carousel-control .carousel-control-next-icon {
+    background-color: #051D40 !important;
+}
+
+.custom-carousel-control:hover .carousel-control-prev-icon,
+.custom-carousel-control:hover .carousel-control-next-icon {
+    background-color: darkgrey;
+}
+
+
+
+
+/***** RESUME *****/
 #Resume{
   padding-left: 6vw;
   padding-right: 4vw;
@@ -273,10 +334,14 @@ input:checked + .slider:before {
 
 
 
-/* CONTACTS */
+
+/***** CONTACTS *****/
 #Contacts{
   padding-left: 6vw;
   padding-right: 4vw;
+}
+#Contacts p, #Contacts a{
+  font-size: 20px;
 }
 
 .formContainer{
@@ -289,6 +354,32 @@ input:checked + .slider:before {
   padding-right: 4vw;
 }
 
+#contactForm button{
+  transition: background-color 0.3s ease;
+}
+#contactForm button:hover{
+  background-color: #4BD1FB;
+}
+
 #message{
   height: 18vh;
+}
+
+
+.contacts-container{
+  padding: 0 28vw !important;
+}
+
+.contacts-container img{
+  margin-right: 0.6vw;
+  width: 2vw;
+}
+
+#OtherContacts{
+  gap: 2vw;
+}
+
+#OtherContacts a{
+  padding: 1vh 2vw;
+  font-size: medium;
 }

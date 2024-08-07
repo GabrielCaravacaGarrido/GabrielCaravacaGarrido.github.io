@@ -1,3 +1,22 @@
+/* LANGUAGE */
+$(document).ready(function() {
+    // Default
+    $('.es').show();
+
+    $('#language-switch').change(function() {
+        if (this.checked) {
+            $('.es').hide();
+            $('.en').show();
+        } else {
+            $('.en').hide();
+            $('.es').show();
+        }
+    });
+});
+
+
+
+/*SIDEBAR*/
 document.querySelectorAll('.nav-link').forEach(function (link) {
     link.addEventListener('click', function (event) {
         //Eliminar clase active
@@ -11,30 +30,24 @@ document.querySelectorAll('.nav-link').forEach(function (link) {
 });
 
 
-/* ANIMATIONS */
-/*window.addEventListener('load', function () {
-    const mision_anim = document.getElementById('MissionAnim');
-    const pauseFrame = 50;
 
-    if (mision_anim) {
-        const animation = mision_anim.getLottie();
-        if (animation) {
 
-            animation.play();
 
-            const interval = setInterval(function () {
-                if (animation.currentFrame >= pauseFrame) {
-                    animation.goToAndStop(pauseFrame, true);
-                    clearInterval(interval);
-                }
-            }, 100); // ms de animacion
-        } else {
-            console.error('La animación no se ha cargado correctamente.');
-        }
+/*SCROLLTOP*/
+window.onscroll = function() {
+    var scrollTopBtn = document.getElementById("scrollTopBtn");
+    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+        scrollTopBtn.style.display = "block";
     } else {
-        console.error('El elemento con id "MissionAnim" no se encuentra.');
+        scrollTopBtn.style.display = "none";
     }
-});*/
+};
+// Función para desplazar hacia arriba
+function scrollToTop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+
 
 
 
