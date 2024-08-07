@@ -31,6 +31,7 @@
 
   <!-- SweetAlert -->
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  
 </head>
 
 <body>
@@ -601,12 +602,16 @@
             </div>
 
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary lang es" data-bs-dismiss="modal">
-                Cerrar
-              </button>
-              <button type="button" class="btn btn-secondary lang en" data-bs-dismiss="modal">
-                Close
-              </button>
+              <div class="lang es">
+                <button type="button" class="btn btn-secondary lang es" data-bs-dismiss="modal">
+                  Cerrar
+                </button>
+              </div>
+              <div class="lang en">
+                <button type="button" class="btn btn-secondary lang en" data-bs-dismiss="modal">
+                  Close
+                </button>
+              </div>                     
             </div>
           </div>
         </div>
@@ -756,11 +761,25 @@
           <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email">
           gabriel.caravaca9@gmail.com
         </p>
-        <p>
-          <img src="https://cdn-icons-png.flaticon.com/512/724/724664.png" alt="Phone">
-          +503 8977 - 6523
-        </p>
+        <div class="pb-4">
+          <a class="btn btn-success w-100 mb-4" href="https://wa.me/50689776523" target="_blank">
+            <img src="Imagenes/Contacts/Whatsapp.png" alt="Phone">
+            +503 8977 - 6523
+          </a>
+          <a class="btn btn-dark w-100 mb-4" href="https://github.com/GabrielCaravacaGarrido">
+            <img src="Imagenes/Contacts/GitHub.png" alt="GitHub">
+            GitHub
+          </a><br/>
+          <a class="btn btn-primary w-100" href="https://www.linkedin.com/in/gabriel-caravaca-garrido-421335313/">
+            <img src="Imagenes/Contacts/Linkedin.png" alt="LinkedIn">
+            LinkedIn
+          </a>
+        </div>
 
+
+
+
+        <!--
         <div class="d-flex justify-content-center" id="OtherContacts">
           <a class="btn btn-dark" href="https://github.com/GabrielCaravacaGarrido">
             <img src="Imagenes/Contacts/GitHub.png" alt="GitHub">
@@ -771,6 +790,7 @@
             LinkedIn
           </a>
         </div>
+        -->
       </div>
     </div>
 

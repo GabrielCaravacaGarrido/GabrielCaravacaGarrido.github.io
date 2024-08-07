@@ -260,7 +260,7 @@ input:checked + .slider:before {
 
 .carousel-inner{
   justify-content: center;
-  align-items: center;
+  align-items: center !important;
   height: 80vh;
 }
 
@@ -367,19 +367,10 @@ input:checked + .slider:before {
 
 
 .contacts-container{
-  padding: 0 28vw !important;
+  padding: 0 26vw !important;
 }
 
 .contacts-container img{
   margin-right: 0.6vw;
   width: 2vw;
-}
-
-#OtherContacts{
-  gap: 2vw;
-}
-
-#OtherContacts a{
-  padding: 1vh 2vw;
-  font-size: medium;
 }
