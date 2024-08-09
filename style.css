@@ -10,7 +10,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 5.5vw !important;
+  font-size: 5vw !important;
 }
 
 @media (max-width: 770px) {
@@ -21,6 +21,9 @@ h1 {
     font-size: 10vw !important;
   }
 }
+
+
+
 
 /***** COLORS *****/
 .black-letter{
@@ -41,10 +44,16 @@ h1 {
 }
 
 
+
+
+
 /***** DISPLAY *****/
 .lang{
   display: none;
 }
+
+
+
 
 
 /***** SIDEBAR *****/
@@ -185,15 +194,16 @@ input:checked + .slider:before {
 
 
 
+
 /***** SCROLLTOP *****/
 #scrollTopBtn {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 3%;
+  right: 1.5%;
   display: none;
   border: none;
   background: none;
-  padding: 10px;
+  padding: 1vh 1vw;
   cursor: pointer;
   z-index: 1000;
 }
@@ -206,6 +216,16 @@ input:checked + .slider:before {
 
 #scrollTopBtn:hover img {
   filter: brightness(0.8);
+}
+
+@media (max-width: 770px) {
+  #scrollTopBtn{
+    bottom: 7%;
+  }
+  #scrollTopBtn img {
+    width: 10vw;
+    height: 5vh;
+  }
 }
 
 
@@ -324,6 +344,7 @@ input:checked + .slider:before {
 
 
 
+
 /***** EXPERIENCE *****/
 #Experience{
   padding-left: 6vw;
@@ -334,11 +355,29 @@ input:checked + .slider:before {
   font-size: 1.5vw;
 }
 
+@media (max-width: 770px) {
+  #Experience p{
+    font-size: 4vw;
+  }
+}
+
 .exp-card{
   /*border-radius: 50px !important;*/
   width: 30vw;
+  max-height: 60vh;
   border: none !important;
+}
 
+@media (max-width: 770px) {
+  .exp-card {
+    width: 80%;
+    max-width: none;
+    min-width: 80%;
+  } 
+
+  .exp-card img{
+    padding: 1vh 4vw;
+  }
 }
 
 .no-border{
@@ -370,6 +409,15 @@ input:checked + .slider:before {
   max-height: auto;
   width: 100%;
   margin: 0 auto;
+}
+
+@media (max-width: 770px) {
+  .long_img{
+    width: 80%;
+  }
+  .carousel-inner{
+    height: auto;
+  }
 }
 
 .custom-indicators button {
@@ -408,12 +456,18 @@ input:checked + .slider:before {
   font-size: 1.5vw;
 }
 
+@media (max-width: 770px) {
+  #Resume p{
+    font-size: 4vw;
+  } 
+}
+
 
 .padding-enorme{
   padding-bottom: 100px;
 }
 
-.CV_ES{
+.curriculum_margin{
   margin-top: 15vh;
   margin-bottom: 10vh;
 }
@@ -439,6 +493,12 @@ input:checked + .slider:before {
 #Contacts p, #Contacts a{
   font-size: 1.5vw;
 }
+@media (max-width: 770px) {
+  #Contacts p, #Contacts a{
+    font-size: 4vw;
+  }
+}
+
 
 .formContainer{
   margin: 5vh 20vw;
@@ -448,6 +508,12 @@ input:checked + .slider:before {
 #contactForm{
   padding-left: 4vw;
   padding-right: 4vw;
+}
+
+@media (max-width: 770px) {
+  .formContainer{
+    margin: 0;
+  }
 }
 
 #contactForm button{
@@ -463,10 +529,16 @@ input:checked + .slider:before {
 
 
 .contacts-container{
-  padding: 0 26vw !important;
+  padding: 5vh 26vw !important;
 }
 
 .contacts-container img{
   margin-right: 0.6vw;
   width: 2vw;
+}
+
+@media (max-width: 770px) {
+  .contacts-container{
+    padding: 5vh 5vw !important;
+  }
 }

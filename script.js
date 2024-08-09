@@ -35,12 +35,24 @@ document.querySelectorAll('.nav-link').forEach(function (link) {
 
 /*SCROLLTOP*/
 window.onscroll = function() {
+    var dis_width = window.innerWidth;
     var scrollTopBtn = document.getElementById("scrollTopBtn");
-    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
-        scrollTopBtn.style.display = "block";
-    } else {
-        scrollTopBtn.style.display = "none";
+
+    if(dis_width > 770){
+        if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+            scrollTopBtn.style.display = "block";
+        } else {
+            scrollTopBtn.style.display = "none";
+        }
     }
+    else{
+        if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) {
+            scrollTopBtn.style.display = "block";
+        } else {
+            scrollTopBtn.style.display = "none";
+        }
+    }
+    
 };
 // Función para desplazar hacia arriba
 function scrollToTop() {
