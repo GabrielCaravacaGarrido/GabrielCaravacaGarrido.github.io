@@ -35,20 +35,17 @@
 </head>
 
 <body>
+
   <!-- SIDEBAR -->
   <div class="d-flex flex-column flex-shrink-0 bg-light" id="sidebar">
-    <!--<a href="" class="d-block p-2 link-dark text-decoration-none" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Icon-only">
-          <img class="sidebarImage" src="Imagenes/Favicon.png" alt="Icon">
-          <span class="visually-hidden">Icon-only</span>
-      </a>-->
 
-    <div href="" class="d-block p-2 link-dark text-decoration-none text-center" title="" data-bs-toggle="tooltip"
+    <div href="" class="d-block p-2 link-dark text-decoration-none text-center" id="sidebarLogo" title="" data-bs-toggle="tooltip"
       data-bs-placement="right" data-bs-original-title="Icon-only">
       <img class="sidebarImage" src="Imagenes/Favicon.png" alt="Icon" />
       <span class="visually-hidden">Icon-only</span>
     </div>
 
-    <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
+    <ul class="nav nav-pills mb-auto text-center">
       <li class="nav-item">
         <a href="#banner" class="nav-link active sidebarButtonSize" aria-current="page" title=""
           data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Home">
@@ -81,14 +78,14 @@
       </li>
 
       <!-- Rounded switch -->
-      <div class="switch-container justify-content-center text-center pt-1">
+      <li class="switch-container justify-content-center text-center pt-1 w-100">
         <span class="switch-label">ES</span>
         <label class="switch">
           <input type="checkbox" id="language-switch" />
           <span class="slider round"></span>
         </label>
         <span class="switch-label">EN</span>
-      </div>
+      </li>
     </ul>
   </div>
 
@@ -118,21 +115,23 @@
 
 
   <!-- PERFIL PROFESIONAL -->
-  <div class="lang es">
-    <h1></h1>
-    <p class="fs-3" id="perfil-profesional">
-      Ingeniero de software full-stack, especializado en Bootstrap,
-      JavaScript, C#, C++, y SQL, con habilidades en diseño de interfaces,
-      desarrollo backend y gestión de bases de datos.
-    </p>
-  </div>
-  <div class="lang en">
-    <h1></h1>
-    <p class="fs-3" id="perfil-profesional">
-      Full-stack software engineer, specialized in Bootstrap, JavaScript, C#, C++, and SQL, with skills in interface
-      design, backend development, and database management.
-    </p>
-  </div>
+   <div id="perfil-profesional">
+    <div class="lang es">
+      <h1></h1>
+      <p>
+        Ingeniero de software full-stack, especializado en Bootstrap,
+        JavaScript, C#, C++, y SQL, con habilidades en diseño de interfaces,
+        desarrollo backend y gestión de bases de datos.
+      </p>
+    </div>
+    <div class="lang en">
+      <h1></h1>
+      <p>
+        Full-stack software engineer, specialized in Bootstrap, JavaScript, C#, C++, and SQL, with skills in interface
+        design, backend development, and database management.
+      </p>
+    </div>
+   </div>
 
 
 
@@ -143,59 +142,66 @@
     <h1 class="text-center lang es">Sobre Mi</h1>
     <h1 class="text-center lang en">About me</h1>
 
-    <div class="fluid-container pt-3">
-      <div class="row justify-content-center">
-        <div class="col-md-4 me-4 d-flex justify-content-center">
+    <div class="container-fluid pt-3">
+      <div class="row justify-content-center g-1">
+        <div class="col-md-4 d-flex justify-content-center mb-3 mb-md-0">
           <div class="card animContainer">
-            <div class="card-img-top">
+            <!-- Card 1 -->
+            <div class="card-img-top text-center">
               <lottie-player id="MissionAnim"
                 src="https://lottie.host/9433b8a8-ad13-4151-a728-516aaf3bd11d/ceJgI40Kz5.json" autoplay
                 loop></lottie-player>
             </div>
-            <div class="card-body lang es">
-              <h2 class="card-title text-center">Misión</h2>
-              <p class="card-text px-3 pb-3">
-                Aplicar mis conocimientos de programación para desarrollar
-                soluciones innovadoras y eficientes, contribuyendo al éxito de
-                la empresa. Además de facilitar la interacción entre las
-                personas y la tecnología.
-              </p>
-            </div>
-            <div class="card-body lang en">
-              <h2 class="card-title text-center">Mission</h2>
-              <p class="card-text px-3 pb-3">
-                Apply my programming knowledge to develop innovative and efficient solutions, contributing to the
-                success of the company. Additionally, facilitate the interaction between people and technology.
-              </p>
+            <div class="card-body">
+              <div class="lang es">
+                <h2 class="card-title text-center">Misión</h2>
+                <p class="card-text px-3 pb-3">
+                  Aplicar mis conocimientos de programación para desarrollar
+                  soluciones innovadoras y eficientes, contribuyendo al éxito de
+                  la empresa. Además de facilitar la interacción entre las
+                  personas y la tecnología.
+                </p>
+              </div>
+              <div class="lang en">
+                <h2 class="card-title text-center">Mission</h2>
+                <p class="card-text px-3 pb-3">
+                  Apply my programming knowledge to develop innovative and efficient solutions, contributing to the
+                  success of the company. Additionally, facilitate the interaction between people and technology.
+                </p>
+              </div>
             </div>
           </div>
         </div>
-
-        <div class="col-md-4 ms-4 d-flex justify-content-center">
+    
+        <div class="col-md-4 d-flex justify-content-center">
           <div class="card animContainer">
-            <div class="card-img-top">
+            <!-- Card 2 -->
+            <div class="card-img-top text-center">
               <lottie-player id="VisionAnim"
                 src="https://lottie.host/d8fbc471-c0f8-4d6a-9d98-bfa573924b90/QAlq2QUxoq.json" autoplay></lottie-player>
             </div>
-            <div class="card-body lang es">
-              <h2 class="card-title text-center">Visión</h2>
-              <p class="card-text px-3 pb-3">
-                Ser un experto en desarrollo de software, creando aplicaciones
-                inteligentes, elegantes y seguras que impulsen el progreso
-                tecnológico y beneficien a la empresa.
-              </p>
-            </div>
-            <div class="card-body lang en">
-              <h2 class="card-title text-center">Vision</h2>
-              <p class="card-text px-3 pb-3">
-                To be an expert in software development, creating intelligent, elegant, and secure applications that
-                drive technological progress and benefit the company.
-              </p>
+            <div class="card-body">
+              <div class="lang es">
+                <h2 class="card-title text-center">Visión</h2>
+                <p class="card-text px-3 pb-3">
+                  Ser un experto en desarrollo de software, creando aplicaciones
+                  inteligentes, elegantes y seguras que impulsen el progreso
+                  tecnológico y beneficien a la empresa.
+                </p>
+              </div>
+              <div class="lang en">
+                <h2 class="card-title text-center">Vision</h2>
+                <p class="card-text px-3 pb-3">
+                  To be an expert in software development, creating intelligent, elegant, and secure applications that
+                  drive technological progress and benefit the company.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    
 
 
 

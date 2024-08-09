@@ -1,7 +1,7 @@
 body {
   background-color: #051D40 !important;
   color: white !important;
-  padding-left: 7.9vw;
+  padding-left: 5.9vw;
   font-family: "Open Sans", sans-serif !important;
 }
 
@@ -10,7 +10,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 80px !important;
+  font-size: 5.5vw !important;
 }
 
 /***** COLORS *****/
@@ -40,37 +40,78 @@ h1 {
 
 /***** SIDEBAR *****/
 #sidebar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1030;
-    width: 8%;
-    height: 100%;
-
-    background-color: #0071C9 !important;
-  }
-
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1030;
+  width: 6%;
+  height: 100%;
+  background-color: #0071C9 !important;
+  transition: all 0.3s ease;
+}
 
 .sidebarButtonSize{
-    padding-top: 4.2vh !important;
-    padding-bottom: 4.2vh !important;
+  padding-top: 4vh !important;
+  padding-bottom: 4vh !important;
+  width: 100%;
 }
 
 .sidebarImage{
-  width: 3.8vw;
+  width: 100%;
 }
 
 .active{
   background-color: #051D40 !important;
 }
 
+@media (max-width: 770px) {
+  #sidebarLogo{
+    display: none !important;
+  }
+
+  #sidebar {
+    width: 100%;
+    height: auto;
+    bottom: 0;
+    left: 0;
+    top: auto;
+    flex-direction: row;
+    padding: 0;
+  }
+
+  .sidebarImage{
+    width: 10%;
+  }
+
+  .sidebarButtonSize{
+    padding: 2% !important;
+    margin: 0 !important;
+    width: 15vw;
+  }
+
+  .nav {
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .nav-item {
+    flex: 1; /* Hace que cada item ocupe el mismo espacio */
+    text-align: center;
+  }
+
+  .switch-container {
+    display: none; /* Hide the switch in bottom bar */
+  }
+}
+
 
 /******** LANGUAGE SWITCH ********/
 .switch {
   position: relative;
-  display: inline-block;
-  width: 4vw;
-  height: 5.5vh;
+
+  width: 4vw !important;
+  height: 4vh;
 }
 
 /* Hide default HTML checkbox */
@@ -87,8 +128,7 @@ h1 {
 
 .switch-label {
   margin: 0 0.2vw;
-  font-family: 'Roboto', sans-serif !important;
-  font-size: medium;
+  font-size: 1vw;
 }
 
 /* The slider */
@@ -107,10 +147,10 @@ h1 {
 .slider:before {
   position: absolute;
   content: "";
-  height: 4vh;
-  width: 1.8vw;
-  left: 0.2vw;
-  bottom: 0.7vh;
+  height: 3vh;
+  width: 1.5vw;
+  left: 0.1vw;
+  bottom: 0.5vh;
   background-color: white;
   -webkit-transition: .4s;
   transition: .4s;
@@ -119,9 +159,9 @@ h1 {
 
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(1.8vw);
-  -ms-transform: translateX(1.8vw);
-  transform: translateX(1.8vw);
+  -webkit-transform: translateX(1.1vw);
+  -ms-transform: translateX(1.1vw);
+  transform: translateX(1.1vw);
 }
 
 /* Rounded sliders */
@@ -163,6 +203,9 @@ input:checked + .slider:before {
 
 
 /***** BANNER *****/
+#banner{
+  margin-bottom: 2vh;
+}
 .image-container {
   position: relative;
   width: 100%;
@@ -172,7 +215,7 @@ input:checked + .slider:before {
 }
 .foreground-image {
   position: absolute;
-  top: 15vh;
+  top: 18%;
   left: 0;
   width: 50%;
   object-fit:cover;
@@ -185,30 +228,44 @@ input:checked + .slider:before {
 #perfil-profesional{
   padding-left: 15.5vw;
   padding-right: 2vw;
-  padding-top: 4vh;
   padding-bottom: 16vh;
+}
+
+#perfil-profesional p{
+  font-size: 2vw;
 }
 
 
 
 /***** SOBRE MI *****/
-#sobre-mi{
-  padding-left: 6vw;
-  padding-right: 4vw;
+
+
+#sobre-mi h2{
+  font-size: 3vw !important;
 }
 
 #sobre-mi p{
-  font-size: 20px;
+  font-size: 1.5vw;
 }
 
 .card-img-top{
-  height: 30vh;
+  height: 35%;
 }
 
 .animContainer{
   background-color: #0071C9 !important;
   border-radius: 50px !important;
-  width: 25vw;
+  width: 90%;
+  max-width: 350px;
+  min-width: 280px;
+
+  height: 85%;
+  max-height: 600px;
+  min-height: 250px;
+}
+
+.sobre-mi-card-margin{
+  margin: 0 !important;
 }
 
 #MissionAnim{
@@ -218,6 +275,20 @@ input:checked + .slider:before {
 #VisionAnim{
   padding: 0 !important;
 }
+
+@media (max-width: 770px) {
+  .animContainer {
+    width: 80%; /* Usa todo el ancho disponible en pantallas pequeñas */
+    max-width: none; /* Elimina el límite de ancho */
+    min-width: 80%; /* Asegura que use todo el ancho */
+  }
+
+  .card-img-top {
+    height: 20vh; /* Ajusta la altura en pantallas pequeñas */
+  }
+  
+}
+
 
 #valores{
   padding-top: 5vh;
@@ -235,7 +306,7 @@ input:checked + .slider:before {
 }
 
 #Experience p{
-  font-size: 20px;
+  font-size: 1.5vw;
 }
 
 .exp-card{
@@ -309,7 +380,7 @@ input:checked + .slider:before {
 }
 
 #Resume p{
-  font-size: 20px;
+  font-size: 1.5vw;
 }
 
 
@@ -341,7 +412,7 @@ input:checked + .slider:before {
   padding-right: 4vw;
 }
 #Contacts p, #Contacts a{
-  font-size: 20px;
+  font-size: 1.5vw;
 }
 
 .formContainer{
