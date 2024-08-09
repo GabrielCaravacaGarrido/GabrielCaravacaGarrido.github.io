@@ -111,7 +111,7 @@ h1 {
   .sidebarButtonSize{
     padding: 2% !important;
     margin: 0 !important;
-    width: 20vw;
+    width: 17vw;
   }
 
   .nav {
@@ -134,8 +134,7 @@ h1 {
 /******** LANGUAGE SWITCH ********/
 .switch {
   position: relative;
-
-  width: 4vw !important;
+  width: 4vw;
   height: 4vh;
 }
 
@@ -153,7 +152,7 @@ h1 {
 
 .switch-label {
   margin: 0 0.2vw;
-  font-size: 1vw;
+  font-size: 0.7rem;
 }
 
 /* The slider */
@@ -174,7 +173,7 @@ h1 {
   content: "";
   height: 3vh;
   width: 1.5vw;
-  left: 0.1vw;
+  left: 0.4vw;
   bottom: 0.5vh;
   background-color: white;
   -webkit-transition: .4s;
@@ -184,9 +183,9 @@ h1 {
 
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(1.1vw);
-  -ms-transform: translateX(1.1vw);
-  transform: translateX(1.1vw);
+  -webkit-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  transform: translateX(100%);
 }
 
 /* Rounded sliders */
