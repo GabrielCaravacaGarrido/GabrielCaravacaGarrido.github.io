@@ -105,11 +105,11 @@ h1 {
   }
 
   .sidebarImage{
-    width: 60%;
+    width: 100%;
   }
 
   .sidebarButtonSize{
-    padding: 2% !important;
+    padding: 0 10% !important;
     margin: 0 !important;
     width: 17vw;
   }
