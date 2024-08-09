@@ -113,3 +113,12 @@ $(document).ready(function(){
     });
 });
 
+
+window.onload = function() {
+    if (!sessionStorage.getItem('hasReloaded')) {
+        sessionStorage.setItem('hasReloaded', 'true');
+        window.location.reload(true);
+    } else {
+        sessionStorage.removeItem('hasReloaded');
+    }
+};

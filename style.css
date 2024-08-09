@@ -273,14 +273,12 @@ input:checked + .slider:before {
 
 
 /***** SOBRE MI *****/
-
-
 #sobre-mi h2{
   font-size: 3vw !important;
 }
 
 #sobre-mi p{
-  font-size: 1.5vw;
+  font-size: 1.3vw;
 }
 
 @media (max-width: 770px) {
@@ -301,11 +299,11 @@ input:checked + .slider:before {
   background-color: #0071C9 !important;
   border-radius: 50px !important;
   width: 90%;
-  max-width: 350px;
+  max-width: 400px;
   min-width: 280px;
 
-  height: 100%;
-  max-height: 600px;
+  height: auto;
+  max-height: 540px;
   min-height: 250px;
 }
 
@@ -364,20 +362,8 @@ input:checked + .slider:before {
 .exp-card{
   /*border-radius: 50px !important;*/
   width: 30vw;
-  max-height: 60vh;
+  height: 70vh;
   border: none !important;
-}
-
-@media (max-width: 770px) {
-  .exp-card {
-    width: 80%;
-    max-width: none;
-    min-width: 80%;
-  } 
-
-  .exp-card img{
-    padding: 1vh 4vw;
-  }
 }
 
 .no-border{
@@ -386,10 +372,26 @@ input:checked + .slider:before {
 
 #Viajeros_Solos button, #Tu_Salud_Primero button {
   transition: background-color 0.3s ease;
+  margin-top: 5vh;
 }
 
 #Viajeros_Solos button:hover, #Tu_Salud_Primero button:hover {
   background-color: #4BD1FB !important;
+}
+
+@media (max-width: 770px) {
+  .exp-card {
+    width: 80%;
+    height: 48vh;
+  } 
+
+  .exp-card img{
+    padding: 1vh 4vw;
+  }
+
+  #Viajeros_Solos button, #Tu_Salud_Primero button {
+    margin-top: 0;
+  }
 }
 
 
