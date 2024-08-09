@@ -74,6 +74,13 @@ h1 {
   width: 100%;
 }
 
+.nav-link{
+  transition: background-color 0.3s ease;
+}
+.nav-link:hover{
+  background-color: #051d407c !important;
+}
+
 .sidebarImage{
   width: 100%;
 }
@@ -98,13 +105,13 @@ h1 {
   }
 
   .sidebarImage{
-    width: 10%;
+    width: 60%;
   }
 
   .sidebarButtonSize{
     padding: 2% !important;
     margin: 0 !important;
-    width: 15vw;
+    width: 20vw;
   }
 
   .nav {
@@ -257,7 +264,7 @@ input:checked + .slider:before {
 #perfil-profesional{
   padding-left: 15.5vw;
   padding-right: 2vw;
-  padding-bottom: 10%;
+  padding-bottom: 5%;
 }
 
 #perfil-profesional p{
@@ -278,17 +285,7 @@ input:checked + .slider:before {
 }
 
 #sobre-mi p{
-  font-size: 1.3vw;
-}
-
-@media (max-width: 770px) {
-  #sobre-mi h2{
-    font-size: 6vw !important;
-  }
-  
-  #sobre-mi p{
-    font-size: 4vw;
-  }
+  font-size: 1.3rem;
 }
 
 .card-img-top{
@@ -320,6 +317,14 @@ input:checked + .slider:before {
 }
 
 @media (max-width: 770px) {
+  #sobre-mi h2{
+    font-size: 6vw !important;
+  }
+  
+  #sobre-mi p{
+    font-size: 4vw;
+  }
+
   .animContainer {
     width: 80%; /* Usa todo el ancho disponible en pantallas pequeñas */
     max-width: none; /* Elimina el límite de ancho */
@@ -353,11 +358,6 @@ input:checked + .slider:before {
   font-size: 1.5vw;
 }
 
-@media (max-width: 770px) {
-  #Experience p{
-    font-size: 4vw;
-  }
-}
 
 .exp-card{
   /*border-radius: 50px !important;*/
@@ -366,13 +366,19 @@ input:checked + .slider:before {
   border: none !important;
 }
 
+@media (min-width: 1800px) {
+  .exp-card {
+    height: 58vh;
+  } 
+}
+
 .no-border{
   border: none !important;
 }
 
 #Viajeros_Solos button, #Tu_Salud_Primero button {
   transition: background-color 0.3s ease;
-  margin-top: 5vh;
+  margin-top: 12%;
 }
 
 #Viajeros_Solos button:hover, #Tu_Salud_Primero button:hover {
@@ -380,6 +386,10 @@ input:checked + .slider:before {
 }
 
 @media (max-width: 770px) {
+  #Experience p{
+    font-size: 4vw;
+  }
+
   .exp-card {
     width: 80%;
     height: 48vh;
@@ -448,7 +458,7 @@ input:checked + .slider:before {
 
 
 
-/***** RESUME *****/
+/***** Curriculum Vitae *****/
 #Resume{
   padding-left: 6vw;
   padding-right: 4vw;
@@ -462,11 +472,6 @@ input:checked + .slider:before {
   #Resume p{
     font-size: 4vw;
   } 
-}
-
-
-.padding-enorme{
-  padding-bottom: 100px;
 }
 
 .curriculum_margin{
